@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"ac6_demo\startup_stm32f411xe.o"
+"ac6_demo\main.o"
+"ac6_demo\stm32f4xx_it.o"
+"ac6_demo\stm32f4xx_hal_msp.o"
+"ac6_demo\stm32f4xx_hal_tim.o"
+"ac6_demo\stm32f4xx_hal_tim_ex.o"
+"ac6_demo\stm32f4xx_hal_rcc.o"
+"ac6_demo\stm32f4xx_hal_rcc_ex.o"
+"ac6_demo\stm32f4xx_hal_flash.o"
+"ac6_demo\stm32f4xx_hal_flash_ex.o"
+"ac6_demo\stm32f4xx_hal_flash_ramfunc.o"
+"ac6_demo\stm32f4xx_hal_gpio.o"
+"ac6_demo\stm32f4xx_hal_dma_ex.o"
+"ac6_demo\stm32f4xx_hal_dma.o"
+"ac6_demo\stm32f4xx_hal_pwr.o"
+"ac6_demo\stm32f4xx_hal_pwr_ex.o"
+"ac6_demo\stm32f4xx_hal_cortex.o"
+"ac6_demo\stm32f4xx_hal.o"
+"ac6_demo\stm32f4xx_hal_exti.o"
+"ac6_demo\system_stm32f4xx.o"
+--strict --scatter "ac6_demo\ac6_demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ac6_demo.map" -o ac6_demo\ac6_demo.axf
